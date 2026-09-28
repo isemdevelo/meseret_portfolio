@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Meseret| Full Stack Developer Portfolio</title>
+  <meta name="description" content="Meseret Ayana (Isem) — Full Stack Developer building scalable web applications with React, Node.js, and modern tools. Based in Addis Ababa, Ethiopia.">
+  <meta name="keywords" content="Full Stack Developer, Web Developer, React, Node.js, Portfolio, Addis Ababa, Ethiopia">
+  <meta name="author" content="Meseret Ayana (Isem)">
+  <meta name="theme-color" content="#0b1020">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Isem | Full Stack Developer">
+  <meta property="og:description" content="Building scalable web applications with modern technologies.">
+  <meta property="og:url" content="https://isem.dev">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://unpkg.com">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Anti-flash theme script (must run before CSS paints) -->
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var light = saved
+          ? saved === 'light'
+          : window.matchMedia('(prefers-color-scheme: light)').matches;
+        if (light) document.documentElement.classList.add('light-theme');
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Skip link for keyboard users -->
+  <a href="#home" class="skip-link">Skip to content</a>
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="header">
+    <a href="#home" class="logo" aria-label="Isem — Home">Meseret</a>
+
+    <nav id="navbar" aria-label="Primary">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#portfolio" class="nav-link">Work</a>
+      <a href="#aboutme" class="nav-link">About</a>
+      <a href="#blog" class="nav-link">Writing</a>
+      <a href="#contact" class="nav-link cta">Let's Talk</a>
+    </nav>
+
+    <div class="header-actions">
+      <button
+        id="theme-toggle"
+        class="icon-btn"
+        aria-label="Toggle light and dark theme"
+        aria-pressed="false"
+        type="button">
+        <i class='bx bx-sun' aria-hidden="true"></i>
+      </button>
+
+      <button
+        id="menu-icon"
+        class="icon-btn menu-btn"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navbar"
+        type="button">
+        <i class='bx bx-menu' aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HOME ==================== -->
+    <section class="home" id="home">
+      <div class="home-detail">
+        <p class="greeting">Hello, I'm</p>
+        <h1>Meseret Ayana <span class="aka">(Isem)</span></h1>
+
+        <h2 class="role-rotator" aria-live="polite">
+          <span class="role" data-text="Full Stack Developer">Full Stack Developer</span>
+          <span class="role" data-text="React Specialist">React Specialist</span>
+          <span class="role" data-text="UI/UX Minded">UI/UX Minded</span>
+          <span class="role" data-text="Problem Solver">Problem Solver</span>
+        </h2>
+
+        <p class="home-desc">
+          I build scalable, responsive web applications with modern technologies.
+          3+ years turning ideas into clean, fast, user-focused products.
+        </p>
+
+        <div class="btn-group">
+          <a href="#contact" class="btn primary">Hire Me</a>
+          <a href="docs/Meseret_Ayana_CV.pdf" class="btn outline" target="_blank" rel="noopener">
+            Download CV <i class='bx bx-download' aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="images/isem.jpg" alt="Portrait of Meseret Ayana (Isem)">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+
+      <div class="services-container">
+        <article class="services-box reveal">
+          <div class="icon"><i class='bx bx-code-alt' aria-hidden="true"></i></div>
+          <h3>Web Development</h3>
+          <p>Custom responsive websites using React, Vue, or vanilla JS with modern UI/UX principles.</p>
+        </article>
+
+        <article class="services-box reveal">
+          <div class="icon"><i class='bx bx-server' aria-hidden="true"></i></div>
+          <h3>Backend Development</h3>
+          <p>RESTful APIs, database design, authentication, and server-side logic with Node.js or PHP.</p>
+        </article>
+
+        <article class="services-box reveal">
+          <div class="icon"><i class='bx bx-mobile-alt' aria-hidden="true"></i></div>
+          <h3>Responsive Design</h3>
+          <p>Mobile-first layouts that work flawlessly across every device and screen size.</p>
+        </article>
+
+        <article class="services-box reveal">
+          <div class="icon"><i class='bx bx-shopping-bag' aria-hidden="true"></i></div>
+          <h3>E-Commerce</h3>
+          <p>Full-featured online stores with payment integration and inventory management.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="aboutme" id="aboutme">
+      <h2 class="heading">About <span>Me</span></h2>
+
+      <p class="about-desc">
+        I'm Meseret Ayana (Isem), a Full Stack Developer based in Addis Ababa, Ethiopia.
+        I specialize in building modern, responsive web applications that solve real problems —
+        from concept and design to deployment and maintenance.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <i class='bx bxl-html5' aria-hidden="true"></i>
+          <h3>HTML5 &amp; CSS3</h3>
+          <p>Semantic markup &amp; modern styling</p>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bxl-javascript' aria-hidden="true"></i>
+          <h3>JavaScript ES6+</h3>
+          <p>Interactive, dynamic features</p>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bxl-react' aria-hidden="true"></i>
+          <h3>React.js</h3>
+          <p>Component-based frontend apps</p>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bxl-nodejs' aria-hidden="true"></i>
+          <h3>Node.js</h3>
+          <p>Scalable backend services</p>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bxl-php' aria-hidden="true"></i>
+          <h3>PHP &amp; MySQL</h3>
+          <p>Database-driven applications</p>
+        </div>
+        <div class="skill-card reveal">
+          <i class='bx bxl-git' aria-hidden="true"></i>
+          <h3>Git &amp; GitHub</h3>
+          <p>Version control &amp; collaboration</p>
+        </div>
+      </div>
+
+      <div class="center">
+        <a href="#contact" class="btn primary">Let's Work Together</a>
+      </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO (4 projects) ==================== -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Featured <span>Projects</span></h2>
+
+      <div class="portfolio-grid">
+
+       <!-- Project 01 -->
+      <article class="project-card reveal">
+        <div class="project-thumb" aria-hidden="true">
+          <i class='bx bx-shopping-bag'></i>
+        </div>
+        <div class="project-body">
+          <span class="project-num">01</span>
+          <h3>Fashion E-Commerce</h3>
+          <p>A full-featured online store with product catalog, shopping cart, and responsive product grid.</p>
+          <ul class="tech-tags">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>GitHub Pages</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://isemdeve.github.io/E-commerce_project/" target="_blank" rel="noopener" class="link-primary">
+              Live Demo <i class='bx bx-link-external' aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/isemdeve/E-commerce_project" target="_blank" rel="noopener" class="link-ghost">
+              <i class='bx bxl-github' aria-hidden="true"></i> Source
+            </a>
+          </div>
+        </div>
+      </article>
+
+        <!-- Project 02 -->
+        <article class="project-card reveal">
+          <div class="project-thumb" aria-hidden="true">
+            <i class='bx bx-task'></i>
+          </div>
+          <div class="project-body">
+            <span class="project-num">02</span>
+            <h3>TaskFlow Pro</h3>
+            <p>Advanced task management app with real-time updates, team collaboration, and progress tracking.</p>
+            <ul class="tech-tags">
+              <li>React</li><li>Firebase</li><li>Tailwind</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="link-primary">
+                Live Demo <i class='bx bx-link-external' aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/isemdeve" target="_blank" rel="noopener" class="link-ghost">
+                <i class='bx bxl-github' aria-hidden="true"></i> Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 03 -->
+        <article class="project-card reveal">
+          <div class="project-thumb" aria-hidden="true">
+            <i class='bx bx-line-chart'></i>
+          </div>
+          <div class="project-body">
+            <span class="project-num">03</span>
+            <h3>Social Media Dashboard</h3>
+            <p>Analytics dashboard for social media managers with real-time metrics and custom reports.</p>
+            <ul class="tech-tags">
+              <li>Vue.js</li><li>D3.js</li><li>Express</li><li>PostgreSQL</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="link-primary">
+                Live Demo <i class='bx bx-link-external' aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/isemdeve" target="_blank" rel="noopener" class="link-ghost">
+                <i class='bx bxl-github' aria-hidden="true"></i> Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 04 -->
+        <article class="project-card reveal">
+          <div class="project-thumb" aria-hidden="true">
+            <i class='bx bx-food-menu'></i>
+          </div>
+          <div class="project-body">
+            <span class="project-num">04</span>
+            <h3>Food Delivery App</h3>
+            <p>Restaurant ordering system with live location tracking and real-time order status updates.</p>
+            <ul class="tech-tags">
+              <li>React Native</li><li>Node.js</li><li>MongoDB</li><li>Maps API</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener" class="link-primary">
+                Live Demo <i class='bx bx-link-external' aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/isemdeve" target="_blank" rel="noopener" class="link-ghost">
+                <i class='bx bxl-github' aria-hidden="true"></i> Source
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="center">
+        <a href="https://github.com/isemdeve" target="_blank" rel="noopener" class="btn outline">
+          See More on GitHub <i class='bx bxl-github' aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== BLOG ==================== -->
+    <section class="blog" id="blog">
+      <h2 class="heading">Latest <span>Writing</span></h2>
+
+      <div class="blog-filter" role="tablist" aria-label="Filter blog posts">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="web-dev" role="tab" aria-selected="false">Web Dev</button>
+        <button class="filter-btn" data-filter="career" role="tab" aria-selected="false">Career</button>
+        <button class="filter-btn" data-filter="tutorial" role="tab" aria-selected="false">Tutorial</button>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card reveal" data-category="web-dev">
+          <div class="blog-image"><i class='bx bx-code-block' aria-hidden="true"></i></div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class='bx bx-calendar' aria-hidden="true"></i> Jan 15, 2025</span>
+              <span class="category">Web Dev</span>
+            </div>
+            <h3>10 Essential React Hooks Every Developer Should Know</h3>
+            <p>Master React development with these powerful hooks that will transform your coding workflow.</p>
+            <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt' aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal" data-category="career">
+          <div class="blog-image"><i class='bx bx-briefcase' aria-hidden="true"></i></div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class='bx bx-calendar' aria-hidden="true"></i> Jan 10, 2025</span>
+              <span class="category">Career</span>
+            </div>
+            <h3>How to Land Your First Full Stack Developer Job in 2025</h3>
+            <p>A complete guide with tips, resources, and strategies from someone who's been there.</p>
+            <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt' aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="blog-card reveal" data-category="tutorial">
+          <div class="blog-image"><i class='bx bx-terminal' aria-hidden="true"></i></div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span><i class='bx bx-calendar' aria-hidden="true"></i> Jan 5, 2025</span>
+              <span class="category">Tutorial</span>
+            </div>
+            <h3>Building a RESTful API with Node.js and Express</h3>
+            <p>Learn how to create a production-ready API from scratch with authentication.</p>
+            <a href="#" class="read-more">Read More <i class='bx bx-right-arrow-alt' aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="center">
+        <button class="btn outline" id="load-more-posts" type="button">Load More Posts</button>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Get In <span>Touch</span></h2>
+
+      <div class="contact-grid">
+
+        <!-- LEFT: Info card -->
+        <aside class="contact-info reveal">
+          <h3>Let's build something great.</h3>
+          <p class="contact-lead">
+            Have a project in mind? Whether it's a full product, a landing page,
+            or a quick fix — drop me a message and I'll get back within 24 hours.
+          </p>
+
+          <ul class="contact-list">
+            <li>
+              <i class='bx bxs-phone' aria-hidden="true"></i>
+              <div>
+                <span>Phone</span>
+                <a href="tel:+251940285969">+251 940 285 969</a>
+              </div>
+            </li>
+            <li>
+              <i class='bx bxs-envelope' aria-hidden="true"></i>
+              <div>
+                <span>Email</span>
+                <a href="mailto:meseretayana1517@gmail.com">meseretayana1517@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <i class='bx bxs-map' aria-hidden="true"></i>
+              <div>
+                <span>Location</span>
+                <p>Addis Ababa, Ethiopia</p>
+              </div>
+            </li>
+          </ul>
+
+          <div class="contact-socials">
+            <a href="https://github.com/isemdeve" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class='bx bxl-github' aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com/in/isem-deve2927" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class='bx bxl-linkedin' aria-hidden="true"></i>
+            </a>
+            <a href="https://www.tiktok.com/@isem_dev" target="_blank" rel="noopener" aria-label="TikTok">
+              <i class='bx bxl-tiktok' aria-hidden="true"></i>
+            </a>
+            <a href="https://t.me/isem_deve" target="_blank" rel="noopener" aria-label="Telegram">
+              <i class='bx bxl-telegram' aria-hidden="true"></i>
+            </a>
+          </div>
+        </aside>
+
+        <!-- RIGHT: Form -->
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="cf-name">Full Name</label>
+              <input id="cf-name" type="text" name="name" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input id="cf-email" type="email" name="email" placeholder="you@email.com" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="cf-subject">Subject</label>
+            <input id="cf-subject" type="text" name="subject" placeholder="What's this about?" required>
+          </div>
+
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+
+          <div id="statusMsg" role="status" aria-live="polite"></div>
+
+          <button type="submit" class="btn primary full">
+            Send Message <i class='bx bx-send' aria-hidden="true"></i>
+          </button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer>
+    <div class="footer-social">
+      <a href="https://github.com/isemdeve" target="_blank" rel="noopener" aria-label="GitHub">
+        <i class='bx bxl-github' aria-hidden="true"></i>
+      </a>
+      <a href="https://linkedin.com/in/isem-deve2927" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <i class='bx bxl-linkedin' aria-hidden="true"></i>
+      </a>
+      <a href="https://www.tiktok.com/@isem_dev" target="_blank" rel="noopener" aria-label="TikTok">
+        <i class='bx bxl-tiktok' aria-hidden="true"></i>
+      </a>
+      <a href="https://t.me/isem_deve" target="_blank" rel="noopener" aria-label="Telegram">
+        <i class='bx bxl-telegram' aria-hidden="true"></i>
+      </a>
+    </div>
+    <p>© 2025 Isem — Built with care in Addis Ababa.</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
